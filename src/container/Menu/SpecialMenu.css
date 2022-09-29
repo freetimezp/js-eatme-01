@@ -35,7 +35,7 @@
 
 .app__specialMenu-menu_img {
     width: 410px;
-    margin: -5rem 2rem;
+    margin: -5rem 2rem 1rem;
 }
 
 .app__specialMenu-menu_img img {
@@ -53,11 +53,7 @@
 @media screen and (max-width: 2000px) {
     .app__specialMenu-menu_img {
         width: 650px;
-        margin: -4rem 2rem;
-    }
-
-    .app__specialMenu-menu_img img {
-        height: 920px;
+        margin: -4rem 2rem 1rem;
     }
 }
 
