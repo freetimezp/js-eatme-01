@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 import SubHeading from  '../SubHeading/SubHeading';
 import emailjs from '@emailjs/browser';
@@ -37,10 +37,12 @@ const Newsletter = () => {
                 <h1 className="headtext__cormorant">Subscribe to Our Newsletter</h1>
                 <p className="p__opensans">And never miss latest Updates!</p>
             </div>
-            <form className="app__newsletter-input flex__center" id="contact-form">
+            <form className="app__newsletter-input flex__center" id="contact-form" onSubmit="return false">
                 <input type="email" placeholder="Enter your email" name="user_email" id="contact-email" />
                 <p className="contact-message" id="contact-message"></p>
-                <button className="custom__button">Subscribe</button>
+                <button className="custom__button">
+                    Subscribe
+                </button>
             </form>
         </div>
     );
