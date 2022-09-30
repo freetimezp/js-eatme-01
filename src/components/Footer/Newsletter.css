@@ -13,18 +13,16 @@
     margin-top: 3rem;
 }
 
-.contact-message {
+.color-red {
     padding: 1rem 2rem;
-    color: var(--color-white);
+    color: red;
     margin-bottom: 2rem;
 }
 
-.color-red {
-    color: red;
-}
-
 .color-green {
+    padding: 1rem 2rem;
     color: green;
+    margin-bottom: 2rem;
 }
 
 .app__newsletter-input input {
