@@ -12,6 +12,8 @@ const Newsletter = () => {
 
     const sendMail = (e) => {
         e.preventDefault();
+        e.stopPropagation();
+        e.nativeEvent.stopImmediatePropagation();
 
         if(contactEmail.value === '') {
             contactMessage.classList.remove('color-green');
@@ -37,7 +39,7 @@ const Newsletter = () => {
                 <h1 className="headtext__cormorant">Subscribe to Our Newsletter</h1>
                 <p className="p__opensans">And never miss latest Updates!</p>
             </div>
-            <form className="app__newsletter-input flex__center" id="contact-form" onSubmit="return false">
+            <form className="app__newsletter-input flex__center" id="contact-form">
                 <input type="email" placeholder="Enter your email" name="user_email" id="contact-email" />
                 <p className="contact-message" id="contact-message"></p>
                 <button className="custom__button">
